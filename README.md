@@ -12,7 +12,7 @@ OR
 
 ## Live Preview
 
-View a[live preview](https://leandrib.github.io/personal_blog_website/home.html) of my project.
+View a [live preview](https://leandrib.github.io/personal_blog_website/home.html) of my project.
 
 ## Dependencies
 

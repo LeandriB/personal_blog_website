@@ -1,0 +1,295 @@
+@import "nav.css";
+@import "blog.css";
+@import "project.css";
+/*
+*{
+    padding: 0;
+    margin: 0;
+}
+*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1F292C;
+    background-color: rgb(247, 247, 247);
+    margin: 0;
+}
+/* Move header to nav? */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    z-index: 500;
+}
+
+section{ 
+    display: block;
+}
+
+.welcome {
+    margin: 30px 10px 30px 80px;
+    width: 600px;
+}
+
+.small {
+    font-size: 50px;
+    display: block;
+}
+
+.ease-right-expand {
+    -webkit-animation: ease-right-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: ease-right-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.color {
+    transition: color 0.3s ease;
+}
+
+.color:hover {
+    color: #ffd900;
+    cursor: default;
+}
+
+h1 {
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    margin: 50px 0 30px 0;
+}
+
+.top-line {
+    position: absolute;
+    top: 0;
+    height: 5px;
+    width: 100vw;
+    background-color: #ffd900;
+    z-index: 500;
+}
+
+.home-container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(247, 247, 247);
+}
+
+.home-body {
+    margin: 0;
+    flex-grow: 1;
+    height: 100vh;
+}
+
+.home-image {
+    margin: 0;
+    width: 45%;
+    height: 100vh;
+    background-image: url("../images/me.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-text {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.3rem;
+}
+
+/* Form set up and display */
+
+.contact-text {
+    color: var(--color);
+    font-size: 15px;
+    letter-spacing: 1px;
+    
+    line-height: 25px;
+}
+
+.contact-top-text {
+    color: #ffd900;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 0 0 6px 0;
+}
+
+form {
+    margin-right: 30px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin: 5px;
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(219, 219, 219);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+} 
+
+button {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    width: 200px;
+    padding: 12px;
+    color: #ffd900;
+    border: 1px solid #ffd900;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+}
+
+button:hover {
+    color: #f7f7f7;
+    cursor: pointer;
+    background-color: #ffd900;
+    box-shadow: inset 0 100px 0 0 #ffd900;
+}
+
+/* Social Media Icons*/
+
+.social-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    justify-content: center;
+    
+}
+
+.social-icons {
+    width: 35px;
+    height: 35px;
+    margin: 0 15px 5px 0;
+}
+
+.attribute {
+    font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    justify-content: center;
+}
+
+/*
+ * ----------------------------------------
+ * Animation ease-right-expand
+ * ----------------------------------------
+ */
+
+@-webkit-keyframes ease-right-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes ease-right-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 971px) {
+    
+    .welcome {
+        width: auto;
+        position: absolute;
+        top: 300px
+    }
+
+    .home-image {
+        position: absolute;
+        top: 0;
+        height: 300px;
+        min-width: 100vw;   
+    }
+
+    header {
+        position: absolute;
+        width: 100vw;
+        top: 0;
+    }
+    .home-body {
+        margin: 0 auto;
+        flex-grow: 1;
+        height: 100vh;
+        width: 100vw;
+    }
+    h1 {
+        font-family: 'Roboto Slab', serif;
+        font-size: 125px;
+        margin: 50px 0 30px 0;
+    }
+    .small {
+        text-align: left;
+        font-size: 50px;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 736px) {
+    
+    .welcome {
+        position: absolute;
+        top: 200px;
+    }
+
+    .home-image {
+        position: absolute;
+        top: 0;
+        height: 200px;
+    }
+
+    .header {
+        position: absolute;
+        top: 0;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    
+    .welcome {
+        margin: 30px 20px;
+        position: absolute;
+        top: 200px;
+    }
+
+    .home-image {
+        position: absolute;
+        top: 0;
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    header {
+        position: absolute;
+        top: 0;
+    }
+
+}

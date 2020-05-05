@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>LeandriB</title>
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <!-- Link style sheet -->
+        <link rel="stylesheet" href="stylesheets/main.css"/>
+    </head>
+    <body>
+        <section class="top-line"></section>
+        <section class="home-container">
+            <section class="home-body">
+                <header>
+                    <!-- Logo Placeholder-->
+                    <h1 class="logo"></h1>
+                    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                    <nav>
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="project.html">Projects</a></li>
+                            <li><a href="blog.html">Blog </a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <label for="nav-toggle" class="nav-toggle-label">
+                        <span></span>
+                    </label>
+                </header>
+                <section class="blog-image"></section>
+                <div class="blog-content">
+                    <!-- Main Blog content -->
+                    <main class="content">
+                        <!-- Post Item 1 -->
+                        <article class="post-item entry">
+                            <header class="post-title header">
+                                <h2>Introducing Luna Lovegood |</h2>
+                                <time class="post-timestamp">October 11, 2019</time>
+                            </header>
+                            <figure>
+                                <img class="post-image" src="images/engagement.JPG" alt="Engagement">
+                                <figcaption>
+                                    Luna Lovegood is our latest addition and beautiful basset hound puppy.
+                                </figcaption>
+                            </figure>
+                            <p class="post-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae congue mauris rhoncus aenean vel. Amet porttitor eget dolor morbi non arcu risus quis varius.<span id="dots">...</span>
+                                <!-- Collapsible Post -->
+                                <span id="post-content"> Arcu cursus euismod quis viverra. Malesuada nunc vel risus commodo viverra maecenas. Dui faucibus in ornare quam. Amet luctus venenatis lectus magna fringilla urna porttitor. Orci nulla pellentesque dignissim enim sit amet. 
+                                    Diam ut venenatis tellus in. Interdum varius sit amet mattis vulputate enim nulla. Enim sit amet venenatis urna cursus eget. Netus et malesuada fames ac turpis egestas. Tincidunt praesent semper feugiat nibh. Iaculis nunc sed augue lacus viverra 
+                                    vitae congue eu consequat. Tellus rutrum tellus pellentesque eu tincidunt tortor.</span></p>
+                            <button id="collapsible" onclick="expand()">Read More</button>
+                        </article>
+                        <!-- Post Item 2 -->
+                        <article class="post-item entry">
+                            <header class="post-title">
+                                <h2>So long, Cape Town |</h2>
+                                <time class="post-timestamp">March 21, 2019</time>
+                            </header>
+                            <figure>
+                                <img class="post-image" src="images/blouberg.JPG" alt="Cape Town">
+                                <figcaption>
+                                    View of Table Mountain from Blouberg beach with Arthur Higgens.
+                                </figcaption>
+                            </figure>
+                            <p class="post-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae congue mauris rhoncus aenean vel. Amet porttitor eget dolor morbi non arcu risus quis varius.<span id="dots">...</span>
+                                <!-- Collapsible Post -->
+                                <span id="post-content"> Arcu cursus euismod quis viverra. Malesuada nunc vel risus commodo viverra maecenas. Dui faucibus in ornare quam. Amet luctus venenatis lectus magna fringilla urna porttitor. Orci nulla pellentesque dignissim enim sit amet. 
+                                    Diam ut venenatis tellus in. Interdum varius sit amet mattis vulputate enim nulla. Enim sit amet venenatis urna cursus eget. Netus et malesuada fames ac turpis egestas. Tincidunt praesent semper feugiat nibh. Iaculis nunc sed augue lacus viverra 
+                                    vitae congue eu consequat. Tellus rutrum tellus pellentesque eu tincidunt tortor.</span></p>
+                            <button id="collapsible" onclick="expand()">Read More</button>
+                        </article>
+                        <!-- Post Item 3 -->
+                        <article class="post-item entry">
+                            <header class="post-title">
+                                <h2>Knysna Elephant Park |</h2>
+                                <time class="post-timestamp">October 5, 2018</time>
+                            </header>
+                            <figure>
+                                <img class="post-image" src="images/elephant.JPG" alt="Elephant">
+                                <figcaption>
+                                    Thandi, one of the elephants at Knysna Elephant Park.
+                                </figcaption>
+                            </figure>
+                            <p class="post-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae congue mauris rhoncus aenean vel. Amet porttitor eget dolor morbi non arcu risus quis varius.<span id="dots">...</span>
+                                <!-- Collapsible Post -->
+                            <span id="post-content"> Arcu cursus euismod quis viverra. Malesuada nunc vel risus commodo viverra maecenas. Dui faucibus in ornare quam. Amet luctus venenatis lectus magna fringilla urna porttitor. Orci nulla pellentesque dignissim enim sit amet. 
+                                    Diam ut venenatis tellus in. Interdum varius sit amet mattis vulputate enim nulla. Enim sit amet venenatis urna cursus eget. Netus et malesuada fames ac turpis egestas. Tincidunt praesent semper feugiat nibh. Iaculis nunc sed augue lacus viverra 
+                                    vitae congue eu consequat. Tellus rutrum tellus pellentesque eu tincidunt tortor.</span></p>
+                            <button id="collapsible" onclick="expand()">Read More</button>
+                        </article>
+                    </main>
+                    <!-- Sidebar start -->
+                    <aside class="sidebar">
+                        <section class="sidebar-content">
+                            <img class="sidebar-image" src="images/me.png" alt="LeandriB">
+                            <section class="sidebar-text">
+                                <h3 class="sidebar-title">About Me</h3>
+                                <p>South African, living in Michigan <br> Bilingual | Creative Mind | Fitness Enthusiast | Animal Lover | Major Foodie | Minor Geek </p>
+                            </section>
+                        </section>
+                        <section class="social-links">
+                            <a href="https://github.com/LeandriB">
+                                <img src="images/github.png" alt="Github" class="social-logo">
+                            </a>
+                            <a href="https://www.instagram.com/leandrikuyk/">
+                                <img src="images/instagram.png" alt="Instagram" class="social-logo">
+                            </a>
+                            <a href="www.linkedin.com/in/leandri-b-6997a991">
+                                <img src="images/linkedin.png" alt="Linkedin" class="social-logo">
+                            </a>
+                            <a href="https://pin.it/1jwDySf">
+                                <img src="images/pinterest.png" alt="Pinterest" class="social-logo">
+                            </a>
+                            <a href="https://twitter.com/LeandriKuyk">
+                                <img src="images/twitter.png" alt="Twitter" class="social-logo">
+                            </a>
+                            <a href="https://www.facebook.com/leandri.kuyk">
+                                <img src="images/facebook.png" alt="Facebook" class="social-logo">
+                            </a>
+                        </section>
+                        <section class="featured-post">
+                            <h3 class="sidebar-title">You might also like:</h3>
+                            <p><a class="suggestion-link" href="https://boardandbattensiding.net/best-luxury-home-design-ideas/">Best Luxury Home Design Ideas</a></p>
+                            <p><a class="suggestion-link" href="https://www.hometalk.com/42035283/garden-bench-with-plants-plots-simple-build">DIY Garden Bench With Pot Plants</a></p>
+                            <p><a class="suggestion-link" href="https://handluggageonly.co.uk/2018/02/17/12-beautiful-places-amalfi-coast-italy-visit/">12 Best Things To Do In The Almalfi Coast</a></p>
+                            <p><a class="suggestion-link" href="https://www.butteredsideupblog.com/sourdough-pull-apart-rolls/">Sourdough Pull Apart Rolls</a></p>
+                            <p><a class="suggestion-link" href="https://code2cook.com/no-bake-date-energy-bar-vegan-gluten-free/?5249360814">No Bake Date Enegery Bars</a></p>
+                            <p><a class="suggestion-link" href="https://www.farandwide.com/s/best-small-town-by-state-81e39983579047d3?utm_campaign=bestsmalltownbystate-us0desk000000001&utm_source=pin&utm_medium=cpc&pp=0&epik=dj0yJnU9QW1hc1ZlVlRfZnJCQmN0Mm8xY1c0ekQtVmVSVTV4SXYmbj1WWWt1bl80a1JjZkhob0xvbE9IakxBJnQ9QUFBQUFGNnZGZms">America's Coolest Small Towns By State</a></p>
+                            <p>OR</p>
+                            <p><a class="suggestion-link" href="home.html">Return Home</a></p>
+                        </section>
+                        
+                    </aside>
+                </div>
+            </section>
+        </section>
+        <script>
+            function expand() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("post-content");
+                var btnText = document.getElementById("collapsible");
+                
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more";
+                    moreText.style.display = "none";
+                    } else {
+                        dots.style.display = "none";
+                        btnText.innerHTML = "Read less";
+                        moreText.style.display = "inline";
+                        }
+                        }
+        </script>
+        
+    </body>
+
+
+</html>

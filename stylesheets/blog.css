@@ -120,7 +120,15 @@ article img {
     width: 55vw;
 }
 
-#post-content {
+.post {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-content {
     display: none;
     overflow: hidden;
     transition: max-height 0.2s ease-in;

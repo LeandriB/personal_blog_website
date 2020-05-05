@@ -7,6 +7,12 @@ The goal for this project was to create a personal blog website utilizing your H
 ## How to run this program
 
 1. Open the 'home.html' file in a browser.
+OR
+2. View a live preview of my project below.
+
+## Live Preview
+
+View a[live preview](https://leandrib.github.io/personal_blog_website/home.html) of my project.
 
 ## Dependencies
 

@@ -1,12 +1,7 @@
 @import "nav.css";
 @import "blog.css";
 @import "project.css";
-/*
-*{
-    padding: 0;
-    margin: 0;
-}
-*/
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #1F292C;
@@ -264,9 +259,6 @@ button:hover {
         font-size: 70px;
     }
 
-    button {
-        width: 100%;
-    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -290,6 +282,69 @@ button:hover {
     header {
         position: absolute;
         top: 0;
+    }
+
+    /* Small screens for blog */
+    .blog-image {
+        margin-bottom: 5px;
+        width: 100%;
+        position: relative;
+        height: 30vh;
+    }
+
+    .post-title {
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        font-size: 0.7rem;
+        margin-top: 15px;
+    }
+
+    .post-timestamp {
+        text-align: center;
+        font-size: 1em;
+        padding: 0;
+    }
+
+    .header {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        max-width: 70vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    article,
+    aside {
+        margin: auto;
+    }
+
+    aside {
+        padding-bottom: 50px;
+    }
+    
+    article img {
+        width: 83vw;
+    }
+
+    .post {
+        width: 83vw;
+    }
+
+    figure {
+        margin: 15px;
+    }
+
+    figcaption {
+        font-size: 0.7rem;
+        padding-bottom: 0;
+    }
+
+    .sidebar-content,
+    .featured-post, 
+    .social-links {
+        width: 350px;
     }
 
 }

@@ -75,7 +75,7 @@ h1 {
 
 .home-image {
     margin: 0;
-    width: 45%;
+    width: 45vw;
     height: 100vh;
     background-image: url("../images/me.jpg");
     background-position: center;
@@ -199,7 +199,7 @@ button:hover {
 
 /* Media Queries */
 
-@media only screen and (max-width: 971px) {
+@media screen and (max-width: 971px) {
     
     .welcome {
         width: auto;
@@ -207,26 +207,28 @@ button:hover {
         top: 300px
     }
 
-    .home-image {
-        position: absolute;
-        top: 0;
-        height: 300px;
-        min-width: 100vw;   
-    }
-
     header {
         position: absolute;
         width: 100vw;
         top: 0;
     }
+
+    .home-image {
+        position: absolute;
+        top: 0;
+        height: 300px;
+        min-width: 100vw;
+    }
+
     .home-body {
         margin: 0 auto;
         flex-grow: 1;
         height: 100vh;
-        width: 100vw;
+        width: 55vw;
     }
+
     h1 {
-        font-family: 'Roboto Slab', serif;
+        font-family: Arial, Helvetica, sans-serif;
         font-size: 125px;
         margin: 50px 0 30px 0;
     }
@@ -235,22 +237,86 @@ button:hover {
         font-size: 50px;
         display: block;
     }
+
+    /* Blog */
+
+    .blog-content {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        height: 100vh;
+    }
+
+    .post-title {
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        font-size: 15px;
+        margin-top: 25px;
+    }
+
+    .post-timestamp {
+        text-align: center;
+        font-size: 13px;
+        padding: 0;
+    }
+
+    .header {
+        padding: 0;
+        max-width: 65vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    article,
+    aside {
+        margin: 0;
+    }
+
+    aside {
+        padding-bottom: 50px;
+        
+    }
+    
+    article img {
+        width: 70vw;
+    }
+
+    .post {
+        width: 69vw;
+    }
+
+    figure {
+        margin: 10px;
+    }
+
+    figcaption {
+        font-size: 15px;
+        padding-bottom: 0;
+    }
+
+    .sidebar-content,
+    .featured-post, 
+    .social-links {
+        width: 400px;
+        margin-left: 285px;
+    }
 }
 
 @media only screen and (max-width: 736px) {
-    
+
     .welcome {
         position: absolute;
         top: 200px;
     }
-
     .home-image {
         position: absolute;
         top: 0;
-        height: 200px;
+        height: 30vh;
     }
 
-    .header {
+    header {
         position: absolute;
         top: 0;
     }
@@ -259,6 +325,15 @@ button:hover {
         font-size: 70px;
     }
 
+    .blog-image {
+        height: 40vh;
+    }
+
+    .sidebar-content,
+    .social-links,
+    .featured-post{
+        margin-left: 0;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -267,16 +342,18 @@ button:hover {
         margin: 30px 20px;
         position: absolute;
         top: 200px;
+        width: 90vw;
     }
 
     .home-image {
         position: absolute;
         top: 0;
-        height: 200px;
+        height: 30vh;
+        width: 100vw;
     }
 
     h1 {
-        font-size: 70px;
+        font-size: 60px;
     }
 
     header {
@@ -284,6 +361,22 @@ button:hover {
         top: 0;
     }
 
+    .about-text {
+        width: 90vw;
+    }
+
+    .social-container {
+        width: 90vw;
+    }
+
+    .project-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-display {
+        margin: 15px;
+    }
     /* Small screens for blog */
     .blog-image {
         margin-bottom: 5px;

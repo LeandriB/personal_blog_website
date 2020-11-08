@@ -40,5 +40,6 @@ Kevin Powell's Youtube [Channel](https://www.youtube.com/channel/UCJZv4d5rbIKd4Q
 [CSS TRICKS](https://css-tricks.com/snippets/css/complete-guide-grid/)
 * Centering in CSS Grid by [Stackoverflow](https://stackoverflow.com/questions/45536537/centering-in-css-grid)
 * Adding scroll to a section via [Stackoverflow](https://stackoverflow.com/questions/14380442/make-one-section-of-simple-web-page-have-own-scroll-bar)
+* Icons by [Freepik](https://www.flaticon.com/authors/freepik)
 * Calling a JS function on all readmore buttons in blog correctly by [Jamy on Codepen](https://codepen.io/jamygolden/pen/MWarVjK?fbclid=IwAR2gugLiF7SMJQ7A17i7m0octZnCsoogi56hFs9I_EsfLrfy9nD7nyVzJfo)
 * Headshots by [ENVYsion Entertainment](http://www.envysionentertainment.com/)

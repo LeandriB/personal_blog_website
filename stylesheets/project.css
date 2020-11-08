@@ -1,4 +1,8 @@
  /* Project Display */
+:root {
+    --color: #83817fa8;
+    --accent: #4c6c56;
+}
 
 h4 {
     text-transform: uppercase;
@@ -8,6 +12,10 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.scroll {
+    
 }
 
 .project-items{
@@ -84,10 +92,10 @@ h4 {
 }
 
 .button {
-    color:#ffd900;
+    color: var(--accent);
     background-color:  #f7f7f7;
     border-radius: 5px;
-    border: 1px solid #ffd900;
+    border: 1px solid var(--accent);
     padding: 10px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -99,5 +107,5 @@ h4 {
 
 .button:hover {
     color: #f7f7f7;
-    background-color: #ffd900;
+    background-color: var(--accent);
 }

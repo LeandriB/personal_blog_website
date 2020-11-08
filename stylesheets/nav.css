@@ -1,5 +1,6 @@
 :root {
-    --color: rgba(131, 129, 127, 0.66);
+    --color: #83817fa8;
+    --accent: #4c6c56;
 }
 
 /* Navigation Styles Start */
@@ -85,7 +86,7 @@ nav a {
 }
 
 nav a:hover {
-    color:#ffd900;
+    color: var(--accent);
 }
 
 .nav-toggle:checked ~ nav {

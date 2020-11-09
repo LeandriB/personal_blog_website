@@ -4,13 +4,14 @@
 
 :root {
     --color: #83817fa8;
-    --accent: #4c6c56;
+    --accent: #566351;
+    --pink: #c1a7b3;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #1F292C;
-    background-color: rgb(247, 247, 247);
+    /*background-color: var(--accent); Changes background for blog*/ 
     margin: 0;
 }
 /* Move header to nav? */
@@ -46,7 +47,7 @@ section{
 }
 
 .color:hover {
-    color: var(--accent);
+    color: var(--pink);
     cursor: default;
 }
 
@@ -67,9 +68,10 @@ h1 {
 
 .home-container {
     height: 100%;
+    /*width: 55vw; Changes background for blog*/
     display: flex;
     flex-direction: row;
-    background-color: rgb(247, 247, 247);
+    background-color: #f7f7f7;
 }
 
 .home-body {
@@ -78,10 +80,19 @@ h1 {
     height: 100vh;
 }
 
-.home-image {
-    margin: 0;
-    width: 45vw;
+.home-image-container {
     height: 100vh;
+    width: 45vw;
+    background-color: var(--accent);
+}
+
+.home-image {
+    position: absolute;
+    right: 10rem;
+    top: 8rem;
+    /*margin: 0;*/
+    width: 40vw;
+    height: 75vh;
     background-image: url("../images/me.jpg");
     background-position: center;
     background-repeat: no-repeat;

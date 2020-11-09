@@ -87,7 +87,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--accent);
+    color: var(--pink);
 }
 
 .nav-toggle:checked ~ nav {

@@ -2,10 +2,16 @@
 @import "blog.css";
 @import "project.css";
 
+:root {
+    --color: #83817fa8;
+    --accent: #566351;
+    --pink: #c1a7b3;
+    --light: #f7f7f7;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #1F292C;
-    background-color: rgb(247, 247, 247);
     margin: 0;
 }
 /* Move header to nav? */
@@ -41,7 +47,7 @@ section{
 }
 
 .color:hover {
-    color: #ffd900;
+    color: var(--pink);
     cursor: default;
 }
 
@@ -56,7 +62,7 @@ h1 {
     top: 0;
     height: 5px;
     width: 100vw;
-    background-color: #ffd900;
+    background-color: var(--accent);
     z-index: 500;
 }
 
@@ -64,7 +70,6 @@ h1 {
     height: 100%;
     display: flex;
     flex-direction: row;
-    background-color: rgb(247, 247, 247);
 }
 
 .home-body {
@@ -73,16 +78,32 @@ h1 {
     height: 100vh;
 }
 
-.home-image {
-    margin: 0;
-    width: 45vw;
+.home-image-container {
     height: 100vh;
+    width: 45vw;
+    background-color: var(--accent);
+}
+
+.home-image {
+    position: absolute;
+    right: 10rem;
+    top: 8rem;
+    /*margin: 0;*/
+    width: 40vw;
+    height: 75vh;
     background-image: url("../images/me.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+/*
+.box {
+    width: 40vw;
+    height: 75vh;
+    position: relative;
+    border: #1F292C;
+}
+*/
 .about-text {
     font-size: 1.2rem;
     line-height: 1.5rem;
@@ -100,7 +121,7 @@ h1 {
 }
 
 .contact-top-text {
-    color: #ffd900;
+    color: var(--accent);
     font-size: 15px;
     letter-spacing: 1px;
     margin: 0 0 6px 0;
@@ -128,8 +149,8 @@ button {
     font-size: 18px;
     width: 200px;
     padding: 12px;
-    color: #ffd900;
-    border: 1px solid #ffd900;
+    color: var(--pink);
+    border: 1px solid var(--pink);
     border-radius: 5px;
     background-color: #f7f7f7;
 }
@@ -137,8 +158,8 @@ button {
 button:hover {
     color: #f7f7f7;
     cursor: pointer;
-    background-color: #ffd900;
-    box-shadow: inset 0 100px 0 0 #ffd900;
+    background-color: var(--pink);
+    box-shadow: inset 0 100px 0 0 var(--pink);
 }
 
 /* Social Media Icons*/

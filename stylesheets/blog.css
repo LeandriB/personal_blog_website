@@ -288,7 +288,7 @@ aside {
 
 /* Media Queries for blog */
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) and (min-width: 501px) {
     .blog-content {
         grid-template-areas:
         "main"

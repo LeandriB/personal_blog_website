@@ -325,7 +325,7 @@ button:hover {
     }
 }
 
-@media only screen and (max-width: 736px) {
+@media only screen and (max-width: 768px) and (min-width: 501px) {
 
     .welcome {
         position: absolute;
@@ -334,7 +334,9 @@ button:hover {
     .home-image {
         position: absolute;
         top: 0;
-        height: 30vh;
+        height: 35vh;
+        width: 100vw;
+        right: 0;
     }
 
     header {
@@ -355,6 +357,10 @@ button:hover {
     .featured-post{
         margin-left: 0;
     }
+
+    .home-image-container {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -371,6 +377,11 @@ button:hover {
         top: 0;
         height: 30vh;
         width: 100vw;
+        right: 0;
+    }
+
+    .home-image-container {
+        display: none;
     }
 
     h1 {
@@ -459,6 +470,11 @@ button:hover {
     .featured-post, 
     .social-links {
         width: 350px;
+        margin-left: 0;
+    }
+
+    .scroll {
+        width: 70vw;
     }
 
 }

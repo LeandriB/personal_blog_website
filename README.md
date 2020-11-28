@@ -44,4 +44,5 @@ Kevin Powell's Youtube [Channel](https://www.youtube.com/channel/UCJZv4d5rbIKd4Q
 * How to add an image carousel via [CSS-tricks](https://css-tricks.com/css-only-carousel/) and [W3Schools.com](https://www.w3schools.com/howto/howto_js_slideshow.asp)
 * Website inspiration by [RSK](http://rsk.by/)
 * Calling a JS function on all readmore buttons in blog correctly by [Jamy on Codepen](https://codepen.io/jamygolden/pen/MWarVjK?fbclid=IwAR2gugLiF7SMJQ7A17i7m0octZnCsoogi56hFs9I_EsfLrfy9nD7nyVzJfo)
+* CSS Animation from [Animista](https://animista.net/play/basic)
 * Headshots by [ENVYsion Entertainment](http://www.envysionentertainment.com/)

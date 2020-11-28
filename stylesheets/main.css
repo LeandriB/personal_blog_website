@@ -38,13 +38,13 @@ section{
 }
 
 .ease-right-expand {
-    -webkit-animation: ease-right-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-    animation: ease-right-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    -webkit-animation: ease-right-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.1s both;
+    animation: ease-right-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.1s both;
 }
 
 .flip-in-hor-top {
-	-webkit-animation: flip-in-hor-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: flip-in-hor-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-webkit-animation: flip-in-hor-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s both;
+	        animation: flip-in-hor-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s both;
 }
 
 .color {
